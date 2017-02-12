@@ -48,6 +48,8 @@ class StatusController implements ControllerProviderInterface
                 $output .= '</tbody></table>';
                 $output .= '<h1>Server</h1>';
                 $output .= '<pre>'.print_r($_SERVER, true).'</pre>';
+                $output .= '<hr />';
+                $output .= '<pre>'.print_r($_ENV, true).'</pre>';
             } catch (\Exception $e) {
                 $output .= '<p>[EXCEPTION] '.$e->getMessage().'</p>';
                 $output .= '<pre>'.$e->getTraceAsString().'</pre>';
