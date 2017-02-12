@@ -19,8 +19,6 @@ tasks:
                         environment_variables:
                             - name: FOO
                               value: bar
-                            - name: BAZ
-                              value: TBR
                           
                         accessibility:
                             from_external: true
